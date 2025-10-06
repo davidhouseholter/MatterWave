@@ -1,0 +1,10 @@
+[
+  {
+    "question": "What are the main disciplinary areas associated with the Uffizi Gallery?",   
+    "sparql_query": "SELECT DISTINCT ?disciplineLabel WHERE {  <http://dati.beniculturali.it/mibact/luoghi/resource/CulturalInstituteOrSite/101341> cis:hasDiscipline ?discipline .  ?discipline rdfs:label ?disciplineLabel .}"
+  },
+  {
+    "question": "In which physical location is the Uffizi Gallery situated?",
+    "sparql_query": "SELECT DISTINCT ?siteLabel WHERE {  <http://dati.beniculturali.it/mibact/luoghi/resource/CulturalInstituteOrSite/101341> cis:hasSite ?site .  ?site rdfs:label ?siteLabel .}"
+  }
+]
